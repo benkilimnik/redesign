@@ -292,6 +292,16 @@
           </div>
         </div>
 
+        <section class="container flex flex-col max-w-xl py-1 text-left">
+          <h2 class="header2">
+            Accessibility</h2>
+          <ul class="paragraph">
+            <li>Page has several missing form labels for screen readers</li>
+            <li>Low contrast for green and yellow headings on light background</li>
+            <li>Repeated or blank alt text on multiple images</li>
+          </ul>
+        </section>
+
 
         <section class="container flex flex-col max-w-xl py-1 text-left">
           <h1 id="low" class="header1">
@@ -373,11 +383,11 @@
           <h1 id="high" class="header1">
             High Fidelity Prototypes</h1>
 
-          <p class="paragraph">
+          <ul class="paragraph">
             <li class="mb-2">Responsive layout adapts to different screen sizes by hiding the navigation and table of
               contents</li>
             <li class="my-2">Text and images dynamically resize to match the viewport</li>
-          </p>
+          </ul>
 
           <h2 class="header2">
             Desktop</h2>
@@ -550,7 +560,7 @@
 
     <script src="index.js"></script>
     <script src="./scrollmenu.js"></script>
-    <script type="text/javascript">
+    <script>
       new ScrollMenu(['.navbar-nav a'], {
         duration: 600,
       })
