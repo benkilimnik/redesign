@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -71,6 +72,7 @@
               </svg>
             </div>
           </div>
+
           <ul class="sticky top-0 hidden pr-16 mt-4 text-sm align-self-start md:block navbar-nav" id="menu">
             <li class="py-2">
               <a href="#demo" class="flex justify-start px-4 pl-6 text-xl md:mt-12 hover:text-gray-800">
@@ -529,13 +531,18 @@
             Responsive Redesign</h1>
 
           <p class="paragraph">
-            <li class="mb-2">Harnessed CSS grid and flexbox to build a responsive layout</li>
-            <li class="my-2">Created sticky table of contents to structure content of the page</li>
-            <li class="my-2">Designed responsive forms and buttons</li>
+            <li class="mb-2 leading-loose">Harnessed CSS grid and flexbox to build a responsive layout</li>
+            <li class="my-2 leading-loose">Created sticky table of contents to structure content of the page</li>
+            <li class="my-2 leading-loose">Designed responsive forms and buttons</li>
           </p>
-          <p class="pt-8 paragraph"><a href="http://museumofbadart.org/join/" class="text-blue-500">Original</a> vs.
-            <a href="https://nameless-depths-22182.herokuapp.com/" class="text-blue-500">Redesigned</a>
-          </p>
+          <div class="flex justify-start py-2 mt-10">
+            <a href="http://museumofbadart.org/join/" target="_blank"
+              class="mr-16 text-blue-500 transition duration-500 ease-out transform bg-white border-2 border-blue-500 hover:shadow-inner hover:scale-125 btn hover:bg-blue-500 hover:text-white">
+              Original</a>
+            <a href="https://nameless-depths-22182.herokuapp.com/" target="_blank"
+              class="transition duration-500 ease-out transform bg-white border-2 hover:shadow-inner hover:scale-125 btn text-primary border-primary hover:bg-primary hover:text-white">
+              Redesign</a>
+          </div>
         </section>
 
       </main>
@@ -548,26 +555,6 @@
         duration: 600,
       })
     </script>
-
-    <script>function nextSlide() {
-        let activeSlide = document.querySelector('.slide.translate-x-0');
-        activeSlide.classList.remove('translate-x-0');
-        activeSlide.classList.add('-translate-x-full');
-
-        let nextSlide = activeSlide.nextElementSibling;
-        nextSlide.classList.remove('translate-x-full');
-        nextSlide.classList.add('translate-x-0');
-      }
-
-      function previousSlide() {
-        let activeSlide = document.querySelector('.slide.translate-x-0');
-        activeSlide.classList.remove('translate-x-0');
-        activeSlide.classList.add('translate-x-full');
-
-        let previousSlide = activeSlide.previousElementSibling;
-        previousSlide.classList.remove('-translate-x-full');
-        previousSlide.classList.add('translate-x-0');
-      }</script>
 
   </body>
 
