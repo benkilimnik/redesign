@@ -179,19 +179,31 @@
         <section class="container flex flex-col max-w-xl py-1 text-left">
           <h1 id="demo" class="header1">
             Demo</h1>
-
-          <!-- <p class="paragraph"><a href="http://museumofbadart.org/join/" class="text-blue-500">Original</a> vs.
-            <a href="https://nameless-depths-22182.herokuapp.com/" class="text-blue-500">Redesigned</a>
-          </p> -->
-          <div class="flex justify-start py-2">
-            <a href="http://museumofbadart.org/join/" target="_blank"
-              class="mr-16 text-blue-500 transition duration-500 ease-out transform bg-white border-2 border-blue-500 hover:shadow-inner hover:scale-125 btn hover:bg-blue-500 hover:text-white">
-              Original</a>
-            <a href="https://nameless-depths-22182.herokuapp.com/" target="_blank"
-              class="transition duration-500 ease-out transform bg-white border-2 hover:shadow-inner hover:scale-125 btn text-primary border-primary hover:bg-primary hover:text-white">
-              Redesign</a>
-          </div>
         </section>
+
+        <div class="grid justify-start gap-8 md:grid-cols-1 xl:grid-cols-2">
+
+          <div class="overflow-hidden rounded shadow-lg ">
+            <img src="./img/original.png" alt="low fidelity prototype mobile"
+              class="h-auto max-w-full align-middle border-none" />
+            <div class="py-6 text-center">
+              <a href="http://museumofbadart.org/join/" target="_blank"
+                class="inline-block transition duration-500 ease-out transform bg-white border-2 hover:shadow-inner hover:scale-125 btn text-primary border-primary hover:bg-primary hover:text-white">
+                Original</a>
+            </div>
+          </div>
+
+
+          <div class="overflow-hidden rounded shadow-lg">
+            <img src="./img/redesign.png" alt="low fidelity prototype mobile"
+              class="h-auto max-w-full align-middle border-none" />
+            <div class="py-6 text-center">
+              <a href="https://nameless-depths-22182.herokuapp.com/" target="_blank"
+                class="inline-block text-blue-500 transition duration-500 ease-out transform bg-white border-2 border-blue-500 hover:shadow-inner hover:scale-125 btn hover:bg-blue-500 hover:text-white">
+                Redesign</a>
+            </div>
+          </div>
+        </div>
 
         <section class="container flex flex-col max-w-xl py-1 text-left">
           <h1 id="intro" class="header1">
@@ -328,11 +340,12 @@
 
           <div class="flex flex-wrap justify-start py-8">
             <div class="w-12/12">
-              <img src="./img/low_desktop1.png" alt="..."
+              <img src="./img/low_desktop1.png" alt="low fidelity prototype desktop"
                 class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
             </div>
           </div>
-
+          <p class="paragraph">For an explanation on how these wireframes address the usability issues, please see the
+            above section "how these wireframes fix usability issues"</p>
           <h2 class="header2">
             Tablet</h2>
 
@@ -342,7 +355,7 @@
 
           <div class="flex flex-wrap justify-start py-8">
             <div class="w-12/12">
-              <img src="./img/low_tablet1.png" alt="..."
+              <img src="./img/low_tablet1.png" alt="low fidelity prototype tablet"
                 class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
             </div>
           </div>
@@ -350,34 +363,28 @@
           <h2 class="header2">
             Mobile</h2>
 
-          <div class="flex flex-wrap justify-start py-8">
-            <div class="w-12/12">
-              <img src="./img/low_mobile1.png" alt="..."
-                class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
-            </div>
-          </div>
-
-          <div class="flex flex-wrap justify-start py-8">
-            <div class="w-12/12">
-              <img src="./img/low_mobile2.png" alt="..."
-                class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
-            </div>
-          </div>
-
-          <div class="flex flex-wrap justify-start py-8">
-            <div class="w-12/12">
-              <img src="./img/low_mobile3.png" alt="..."
-                class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
-            </div>
-          </div>
-
-          <div class="flex flex-wrap justify-start py-8">
-            <div class="w-12/12">
-              <img src="./img/low_mobile4.png" alt="..."
-                class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
-            </div>
-          </div>
         </section>
+        <div class="grid flex-wrap justify-start gap-8 py-8 md:grid-cols-1 xl:grid-cols-2">
+          <div class="w-12/12">
+            <img src="./img/low_mobile1.png" alt="low fidelity prototype mobile"
+              class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
+          </div>
+
+          <div class="w-12/12">
+            <img src="./img/low_mobile2.png" alt="low fidelity prototype mobile"
+              class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
+          </div>
+
+          <div class="w-12/12">
+            <img src="./img/low_mobile3.png" alt="low fidelity prototype mobile"
+              class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
+          </div>
+
+          <div class="w-12/12">
+            <img src="./img/low_mobile4.png" alt="low fidelity prototype mobile"
+              class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
+          </div>
+        </div>
 
         <section class="container flex flex-col max-w-xl py-1 text-left">
           <h1 id="high" class="header1">
@@ -385,16 +392,16 @@
 
           <ul class="paragraph">
             <li class="mb-2">Responsive layout adapts to different screen sizes by hiding the navigation and table of
-              contents</li>
-            <li class="my-2">Text and images dynamically resize to match the viewport</li>
+              contents.</li>
+            <li class="my-2">Text and images dynamically resize to match the viewport.</li>
           </ul>
 
           <h2 class="header2">
             Desktop</h2>
         </section>
         <div class="flex flex-wrap justify-start py-8">
-          <div class="w-11/12">
-            <img src="./img/high_desktop.png" alt="..."
+          <div class="w-12/12">
+            <img src="./img/high_desktop.png" alt="high fidelity prototype desktop"
               class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
           </div>
         </div>
@@ -406,17 +413,17 @@
 
         <div class="grid flex-wrap justify-start py-8 md:grid-cols-1 xl:grid-cols-2">
           <div class="w-11/12 pb-8">
-            <img src="./img/high_mobile1.png" alt="..."
+            <img src="./img/high_mobile1.png" alt="high fidelity prototype mobile"
               class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
           </div>
 
           <div class="w-11/12 pb-8">
-            <img src="./img/high_mobile2.png" alt="..."
+            <img src="./img/high_mobile2.png" alt="high fidelity prototype mobile"
               class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
           </div>
 
           <div class="w-11/12">
-            <img src="./img/high_mobile3.png" alt="..."
+            <img src="./img/high_mobile3.png" alt="high fidelity prototype mobile"
               class="h-auto max-w-full align-middle border-none rounded shadow-xl" />
           </div>
         </div>
@@ -553,6 +560,7 @@
               class="transition duration-500 ease-out transform bg-white border-2 hover:shadow-inner hover:scale-125 btn text-primary border-primary hover:bg-primary hover:text-white">
               Redesign</a>
           </div>
+
         </section>
 
       </main>
